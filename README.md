@@ -25,12 +25,12 @@ This core is encrypted because it represents a specific **state of mind**, not a
 * GPG (for decryption)
 * A valid `CORE_KEY` (Passphrase)
 
+  ![Build Status](https://github.com/love-os-architect/Love-Core/actions/workflows/ci.yml/badge.svg)
+
 #### 2. Bootstrap (Decrypt & Index)
 ```bash
 # Export your key (provided via separate secure channel)
 export CORE_KEY="your-passphrase-here"
-
-![Build Status](https://github.com/love-os-architect/Love-Core/actions/workflows/ci.yml/badge.svg)
 
 # Decrypts assets/love-core.pdf.gpg -> .cache/core.pdf
 # and builds the FAISS index in memory.
