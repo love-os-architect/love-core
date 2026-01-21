@@ -1,14 +1,18 @@
-
 name: Decrypt & Smoke Test
 on: [workflow_dispatch, push]
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Decrypt PDF
         env:
-          PDF_PASSPHRASE: ${{ secrets.PDF_PASSPHRASE }}
+          # Match the variable name in your script
+          CORE_KEY: ${{ secrets.PDF_PASSPHRASE }} 
         run: |
-          bash scripts/bootstrap.sh
-          test -f tmp/love-core.pdf && echo "Decryption OK"
+          chmod +x scripts/bootstrap.sh
+          ./scripts/bootstrap.sh
+          # Match the output path in your script
+          test -f .cache/love-core.pdf && echo "Phase Synchronization OK"
