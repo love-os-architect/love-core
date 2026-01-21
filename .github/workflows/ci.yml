@@ -5,14 +5,15 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
       
-      - name: Decrypt PDF
+      - name: Initialize Phase Synchronization
         env:
-          # Match the variable name in your script
+          # Use the secret stored in GitHub Settings
           CORE_KEY: ${{ secrets.PDF_PASSPHRASE }} 
         run: |
           chmod +x scripts/bootstrap.sh
           ./scripts/bootstrap.sh
-          # Match the output path in your script
-          test -f .cache/love-core.pdf && echo "Phase Synchronization OK"
+          # Verification: Check if the unencrypted core exists in the cache
+          test -f .cache/love-core.pdf && echo "Phase Synchronization: SUCCESS (R=0 State reached)"
