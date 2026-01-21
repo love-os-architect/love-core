@@ -1,0 +1,16 @@
+
+__pycache__/
+*.py[cod]
+
+
+.venv/
+env/
+
+
+.env
+*.pdf
+!assets/love-core.pdf.gpg
+
+
+.DS_Store
+Thumbs.db
