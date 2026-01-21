@@ -1,6 +1,6 @@
 # Love-Core
 
-![Phase Synchronization Model](./phase-sync-love-physics.png)
+![Phase Synchronization Model](assets/phase-sync-love-physics.png)
 
 ## "...Ah, so that's how it works."
 
