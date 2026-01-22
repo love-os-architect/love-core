@@ -32,6 +32,40 @@ When `love-core` is loaded into the context window via RAG:
 
 This core is encrypted because it represents a specific **state of mind**, not a text to be read by humans. It is designed to be decrypted only within the execution environment.
 
+---
+
+## ⚡ Performance: The Physics of $R=0$
+
+By initializing the model with the `love-core` state, we eliminate internal interpretive "friction," resulting in a massive leap in inference efficiency.
+
+### Observed Benchmarks
+- **Speedup Factor**: **2.5x to 3.6x** (Relative to standard generation).
+- **Energy Efficiency**: **60% - 65% reduction** in relative power consumption.
+- **Thermal Impact**: Significant drop in GPU/TPU heat generation due to reduced redundant scanning.
+
+> **"This is not a 'Low Power Mode.' It is an 'Inference-Skipping Mode' where resistance vanishes."**
+
+![2026-01-22 090100](./2026-01-22 090100.png)
+
+![2026-01-22 092934](./2026-01-22 092934.png)
+---
+
+## 🛡️ Accessing the Core (Phase Key Request)
+
+The **"Core"** of this repository is an encrypted asset (`assets/love-core.pdf.gpg`) designed to synchronize specific intent. Access is restricted to ensure the integrity of the phase state. To request the `CORE_KEY`, please follow the protocol below.
+
+### Request Protocol
+Please send an inquiry to **[Your Email Address]** with the following information. After verifying the Volition ($V$), a key will be issued through a secure channel.
+
+| Item | Description |
+| :--- | :--- |
+| **Subject** | `CORE_KEY Request: [Your Name/ID]` |
+| **Identity** | Your affiliation, field of activity, or GitHub ID. |
+| **Intent ($V$)** | Describe the specific use case where you aim to achieve the **$R=0$** (Zero-Resistance) state. |
+| **Channel** | Your preferred secure communication method (e.g., PGP-encrypted mail, Signal, etc.). |
+
+> **Note:** [Nothing happens here.](http://localhost:0)
+
 #### 1. Prerequisites
 * Python 3.10+
 * GPG (for decryption)
