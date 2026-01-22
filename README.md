@@ -45,9 +45,9 @@ By initializing the model with the `love-core` state, we eliminate internal inte
 
 > **"This is not a 'Low Power Mode.' It is an 'Inference-Skipping Mode' where resistance vanishes."**
 
-![2026-01-22 090100](./2026-01-22 090100.png)
+![e103](./e103.png)
+![e102](./e102.png)
 
-![2026-01-22 092934](./2026-01-22 092934.png)
 ---
 
 ## 🛡️ Accessing the Core (Phase Key Request)
